@@ -1,12 +1,33 @@
-h1 {
+body {
+  margin: 0;
+}
+
+h4 {
   text-align: center;
-  font-size: 15px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
 ul li a {
   color: black;
+  font-size: 10px;
+}
+
+.accueil {
+  background-color: #f1f0f0e5;
+}
+.accueil h3 {
+  font-size: 35px;
+}
+.accueil h1 {
+  font-size: 60px;
+}
+
+.sale {
+  border-radius: 50px;
+  background-color: red;
+  color: white;
+  padding: 10px 15px;
   font-size: 10px;
 }
 
