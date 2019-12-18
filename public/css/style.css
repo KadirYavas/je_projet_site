@@ -1,5 +1,7 @@
+@import "../../node_modules/@fortawesome/fontawesome-free/css/all.css";
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 h4 {
@@ -14,7 +16,7 @@ ul li a {
 }
 
 .accueil {
-  background-color: #f1f0f0e5;
+  background-color: #f3f3f3;
 }
 .accueil h3 {
   font-size: 35px;
@@ -22,21 +24,118 @@ ul li a {
 .accueil h1 {
   font-size: 60px;
 }
-
-.sale {
+.accueil .sale {
   border-radius: 50px;
   color: white;
 }
 
-.imgtext {
-  position: relative;
+.imgtext1 {
+  background-image: url("../../images/services/service-1.jpg");
+  background-position: center;
+  height: 185px;
 }
-.imgtext .centered {
-  position: absolute;
-  top: 50%;
-  left: 40%;
+
+.troisimg a {
+  border-bottom: 1px solid white;
   color: white;
-  border-bottom: 1px white solid;
+}
+.troisimg a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.imgtext2 {
+  background-image: url("../../images/services/service-2.jpg");
+  background-position: center;
+  height: 185px;
+}
+
+.imgtext3 {
+  background-image: url("../../images/services/slider-3.jpg");
+  background-position: center;
+  height: 185px;
+}
+
+.container h5 {
+  color: red;
+}
+.container h4 {
+  font-size: 15px;
+}
+
+.imgproduct {
+  background-image: url("../../images/cta-bg.jpg");
+  width: 100%;
+  background-position: center;
+  height: 500px;
+}
+.imgproduct p {
+  color: white;
+  font-size: 20px;
+}
+.imgproduct button {
+  border-radius: 50px;
+}
+
+.rond {
+  background-color: #ffffff;
+  border: 1px solid grey;
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+  margin: 4px 2px;
+  border-radius: 50%;
+}
+.rond:hover {
+  background-color: grey;
+}
+
+.divicon {
+  width: 500px;
+  background-color: #f3f3f3;
+}
+
+.divicon2 {
+  width: 500px;
+  background-color: #BD584e;
+}
+
+.footerColor {
+  background-color: #212121;
+}
+.footerColor p {
+  color: #969696;
+}
+.footerColor h6 {
+  color: #969696;
+}
+.footerColor h6:hover {
+  color: white;
+}
+.footerColor a {
+  color: #969696;
+}
+
+.footer2Color {
+  background-color: #0a0a0a;
+}
+.footer2Color p {
+  color: #969696;
+}
+
+.borderFooter {
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+}
+
+.footerA a {
+  border: 1px solid grey;
+  padding: 10px;
+  font-size: 10px;
+}
+.footerA a:hover {
+  text-decoration: none;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

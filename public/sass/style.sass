@@ -1,5 +1,11 @@
+@import "../../node_modules/@fortawesome/fontawesome-free/css/all.css"
+    
 body 
     margin: 0
+    overflow-x: hidden
+
+$colorSpan: red
+$footerColor : #969696
     
 h4
     text-align: center
@@ -11,20 +17,89 @@ ul
             color: black
             font-size: 10px
 .accueil
-    background-color: #f1f0f0e5
+    background-color: #f3f3f3
     h3 
         font-size: 35px
     h1
         font-size: 60px
-.sale 
-    border-radius: 50px
-    color: white
-.imgtext
-    position: relative
-    .centered
-        position: absolute
-        top: 50%
-        left: 40%
+    .sale 
+        border-radius: 50px
         color: white
-        border-bottom: 1px white solid
-        
+.imgtext1
+    background-image: url("../../images/services/service-1.jpg")
+    background-position: center
+    height: 185px
+.troisimg
+    a 
+        border-bottom: 1px solid white
+        color: white
+        &:hover
+            color: white
+            text-decoration: none
+.imgtext2
+    background-image: url("../../images/services/service-2.jpg")
+    background-position: center
+    height: 185px
+.imgtext3
+    background-image: url("../../images/services/slider-3.jpg")
+    background-position: center
+    height: 185px
+
+.container 
+    h5 
+        color: $colorSpan
+    h4 
+        font-size: 15px
+
+.imgproduct 
+    background-image: url("../../images/cta-bg.jpg")
+    width: 100%
+    background-position: center
+    height: 500px
+    p 
+        color: white
+        font-size: 20px
+    button
+        border-radius: 50px
+
+.rond 
+    background-color: #ffffff
+    border: 1px solid grey
+    color: white
+    padding: 5px
+    text-decoration: none
+    margin: 4px 2px
+    border-radius: 50%
+    &:hover 
+        background-color: grey
+.divicon 
+    width: 500px
+    background-color: #f3f3f3
+.divicon2
+    width: 500px
+    background-color: #BD584e
+.footerColor 
+    background-color: #212121
+    p 
+        color: $footerColor
+    h6 
+        color: $footerColor
+        &:hover
+            color: white
+    a 
+        color: $footerColor
+.footer2Color 
+    background-color: #0a0a0a
+    p 
+        color: $footerColor
+.borderFooter
+    border-left: 1px solid grey
+    border-right: 1px solid grey
+.footerA
+    a
+        border: 1px solid grey
+        padding: 10px
+        font-size: 10px
+        &:hover
+            text-decoration: none
+            color: white
