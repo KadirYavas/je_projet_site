@@ -4,6 +4,15 @@ body {
   overflow-x: hidden;
 }
 
+.colorSwitch .btn1 {
+  padding: 7px;
+  border: 1px solid black;
+}
+.colorSwitch .btn2 {
+  padding: 7px;
+  background-color: black;
+}
+
 h4 {
   text-align: center;
   padding-top: 30px;
@@ -11,8 +20,15 @@ h4 {
 }
 
 ul li a {
-  color: black;
+  color: #878787;
   font-size: 10px;
+}
+ul li a:hover {
+  color: black;
+}
+
+.nav li:first-child a {
+  color: black;
 }
 
 .accueil {
@@ -115,6 +131,9 @@ ul li a {
 .footerColor a {
   color: #969696;
 }
+.footerColor h4 {
+  text-align: left;
+}
 
 .footer2Color {
   background-color: #0a0a0a;
@@ -127,13 +146,19 @@ ul li a {
   border-left: 1px solid grey;
   border-right: 1px solid grey;
 }
+.borderFooter h6 {
+  border-bottom: 1px solid grey;
+  padding-bottom: 15px;
+}
 
-.footerA a {
+.footerA button {
+  color: #969696;
+  border-radius: 0px;
   border: 1px solid grey;
   padding: 10px;
   font-size: 10px;
 }
-.footerA a:hover {
+.footerA button:hover {
   text-decoration: none;
   color: white;
 }
