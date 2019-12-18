@@ -7,7 +7,6 @@ let bodyC = document.body
 let accueil = document.querySelector('.accueil')
 let h1 = accueil.querySelector('h1')
 let pAcc = accueil.querySelector('p')
-console.log(h1)
 
 btn2.addEventListener('click', () => {
     bodyC.style.backgroundColor = "#242323"
@@ -23,6 +22,45 @@ btn1.addEventListener('click', () => {
     pAcc.style.color = "#212529"
 })
 
+// NavScroll
+
+let navScroll = document.querySelector('header')
+let nav1 = document.querySelector('.navscroll')
+let img = navScroll.querySelector('img')
+
+window.addEventListener('scroll', () => {
+    let y = window.scrollY
+    if(y > 220){
+        navScroll.classList.add("sticky")
+        navScroll.style.top = "5"
+        navScroll.style.zIndex = "2"
+        img.style.float = "left"
+        navScroll.style.backgroundColor = "white"
+        navScroll.style.boxShadow = "1px 1px 1px #dbdbdb"
+        nav1.style.marginTop = "15px"
+    }
+    else{
+        navScroll.classList.remove("sticky")
+        navScroll.style.top = ""
+        navScroll.style.zIndex = ""
+        img.style.float = ""
+        navScroll.style.boxShadow = ""
+    }
+})
+
+
+// Modal
+
+let btn3 = colorSwitch.querySelector('.btn3')
+let modal = document.querySelector('.modal')
+let span3 = document.querySelector('.close')
+
+btn3.addEventListener('click', () => {
+    modal.style.display = "block"
+})
+span3.addEventListener('click', () => {
+    modal.style.display = "none"
+})
 
 
 
