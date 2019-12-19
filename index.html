@@ -48,16 +48,40 @@
 
     </header>
 
+    <!-- Modal -->
+
     <div class="modal">
-        <div class="modal-content">
+        <di class="modal-content">
             <span class="close">&times;</span>
-            <button class="btnmodal">Connection</button>
             <button class="btnmodal">Inscription</button>
-            <div>
-                <input type="text" placeholder="Pseudo">
-                <input type="text" placeholder="Password">
+            <div class="d-flex flex-column">
+                <input type="email" class="w-50 m-1" placeholder="Pseudo ou E-mail">
+                <input type="password" class="w-50 m-1" placeholder="Password">
                 <button class="btnmodal">Se connecter</button>
             </div>
+        </div>
+    </div>
+    <div class="modalinscription">
+        <div class="modal-content2">
+            <span class="close2">&times;</span>
+            <button class="btnmodal2">Connection</button>
+            <div class="d-flex flex-column">
+            <input type="text" class="w-50 m-1" placeholder="Pseudo">
+            <input type="date" class="w-50 m-1" placeholder="Date de naissance">
+            <input type="password" class="w-50 m-1" placeholder="Password">
+            <input type="email" class="w-50 m-1" placeholder="E-mail">
+            <label for="pet-select" class="w-50 m-1">Choisissez votre ville:</label>
+            <select name="city" class="w-50 m-1" id="city-select">
+                <option value="">--Choisissez votre ville--</option>
+                <option value="bruxelles">Bruxelles</option>
+                <option value="istanbul">Istanbul</option>
+                <option value="miami">Miami</option>
+                <option value="londres">Londres</option>
+                <option value="marseille">Marseille</option>
+                <option value="amsterdam">Amsterdam</option>
+            </select>
+        </div>
+            <button class="btnmodal2">S'inscrire</button>
         </div>
     </div>
 
@@ -111,8 +135,9 @@
                 <div class="d-flex align-items-center justify-content-around">
                     <div><span class="sales">Sale!</span></div>
                     <div>
-                    <h4 class="text-center font-weight-bold">Leather Gloves</h4>
-                    <h5 class="text-center"><span class="text-secondary"><s>$34.00</s></span> $27.00</h5></div>
+                        <h4 class="text-center font-weight-bold">Leather Gloves</h4>
+                        <h5 class="text-center"><span class="text-secondary"><s>$34.00</s></span> $27.00</h5>
+                    </div>
                 </div>
             </div>
             <div class="col-4">
@@ -127,8 +152,9 @@
                 <div class="d-flex align-items-center justify-content-around">
                     <div><span class="sales">Sale!</span></div>
                     <div>
-                <h4 class="text-center font-weight-bold">Women Bag</h4>
-                <h5 class="text-center"><span class="text-secondary"><s>$350.00</s></span> $420.00</h5></div>
+                        <h4 class="text-center font-weight-bold">Women Bag</h4>
+                        <h5 class="text-center"><span class="text-secondary"><s>$350.00</s></span> $420.00</h5>
+                    </div>
                 </div>
             </div>
             <div class="col-4">
@@ -187,8 +213,9 @@
                 <div class="d-flex align-items-center justify-content-around">
                     <div><span class="sales">Sale!</span></div>
                     <div>
-                <h4 class="text-center font-weight-bold">Red Bag</h4>
-                <h5 class="text-center"><span class="text-secondary"><s>$350.00</s></span> $420.00</h5></div>
+                        <h4 class="text-center font-weight-bold">Red Bag</h4>
+                        <h5 class="text-center"><span class="text-secondary"><s>$350.00</s></span> $420.00</h5>
+                    </div>
                 </div>
             </div>
             <div class="col-3">

@@ -7,6 +7,7 @@ let bodyC = document.body
 let accueil = document.querySelector('.accueil')
 let h1 = accueil.querySelector('h1')
 let pAcc = accueil.querySelector('p')
+let navNoir = document.querySelector('header')
 
 btn2.addEventListener('click', () => {
     bodyC.style.backgroundColor = "#242323"
@@ -14,6 +15,7 @@ btn2.addEventListener('click', () => {
     bodyC.style.color = "white"
     h1.style.color = "black"
     pAcc.style.color = "black"
+    navNoir.style.backgroundColor = "white"
 })
 btn1.addEventListener('click', () => {
     bodyC.style.backgroundColor = "white"
@@ -54,6 +56,21 @@ window.addEventListener('scroll', () => {
 let btn3 = colorSwitch.querySelector('.btn3')
 let modal = document.querySelector('.modal')
 let span3 = document.querySelector('.close')
+let modalins = document.querySelector('.modalinscription')
+let btnins = modal.querySelectorAll('.btnmodal')[0]
+let btninsco = modal.querySelectorAll('.btnmodal')[1]
+let spanins = document.querySelector('.close2')
+let btnco = document.querySelectorAll('.btnmodal2')[0]
+let btncoins = document.querySelectorAll('.btnmodal2')[1]
+let resultat
+
+let input1ins = modal.querySelectorAll('input')[0]
+let input2ins = modal.querySelectorAll('input')[1]
+
+let input1co = modalins.querySelectorAll('input')[0]
+let input2co = modalins.querySelectorAll('input')[1]
+let input3co = modalins.querySelectorAll('input')[2]
+let input4co = modalins.querySelectorAll('input')[3]
 
 btn3.addEventListener('click', () => {
     modal.style.display = "block"
@@ -61,18 +78,43 @@ btn3.addEventListener('click', () => {
 span3.addEventListener('click', () => {
     modal.style.display = "none"
 })
+btnins.addEventListener('click', () => {
+    modalins.style.display = "block"
+    modal.style.display = "none"
+    input1ins.value = ""
+    input2ins.value = ""
+})
+spanins.addEventListener('click', () => {
+    modalins.style.display = "none"
+})
+btnco.addEventListener('click', () => {
+    modal.style.display = "block"
+    modalins.style.display = "none"
+    input1co.value = ""
+    input2co.value = ""
+    input3co.value = ""
+    input4co.value = ""
+})
+btncoins.addEventListener('click', () => {
+    modalins.style.display = "none"
+    resultat = window.confirm('Merci pour votre inscription, continuez avec la fenetre de connexion ?')
+    if(resultat == true){
+        modal.style.display = "block"
+    }
+    else{
 
-
-
-
-
-
-
-
-
-
-
-
+    }
+    input1co.value = ""
+    input2co.value = ""
+    input3co.value = ""
+    input4co.value = ""
+})
+btninsco.addEventListener('click', () => {
+    modal.style.display = "none"
+    alert('Merci pour votre connexion !')
+    input1ins.value = ""
+    input2ins.value = ""
+})
 
 
 
