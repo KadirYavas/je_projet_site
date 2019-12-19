@@ -23,7 +23,16 @@
                         <a class="nav-link" href="#">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">PRODUCT</a>
+                        
+                        <div class="dropdown">
+                            <a class="nav-link producthover" href="#">PRODUCT</a>
+                            <div class="dropdown-content">
+                              <a href="#">Woocommerce Shop Archive</a>
+                              <a href="#">Cart</a>
+                              <a href="#">Checkout</a>
+                              <a href="#">My Account</a>
+                            </div>
+                          </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">BLOG</a>
@@ -47,6 +56,9 @@
         </nav>
 
     </header>
+    
+
+    
 
     <!-- Modal -->
 
@@ -55,8 +67,10 @@
             <span class="close">&times;</span>
             <button class="btnmodal">Inscription</button>
             <div class="d-flex flex-column">
-                <input type="email" class="w-50 m-1" placeholder="Pseudo ou E-mail">
-                <input type="password" class="w-50 m-1" placeholder="Password">
+                <label for="pseudo" class="text-light">Veuillez saisir votre pseudo ou e-mail:</label>
+                <input type="email" id="pseudo" class="w-50 m-1" placeholder="Pseudo ou E-mail">
+                <label for="password" class="text-light">Veuillez saisir votre password:</label>
+                <input type="password" id="password" class="w-50 m-1" placeholder="Password">
                 <button class="btnmodal">Se connecter</button>
             </div>
         </div>
@@ -66,11 +80,15 @@
             <span class="close2">&times;</span>
             <button class="btnmodal2">Connection</button>
             <div class="d-flex flex-column">
-            <input type="text" class="w-50 m-1" placeholder="Pseudo">
-            <input type="date" class="w-50 m-1" placeholder="Date de naissance">
-            <input type="password" class="w-50 m-1" placeholder="Password">
-            <input type="email" class="w-50 m-1" placeholder="E-mail">
-            <label for="pet-select" class="w-50 m-1">Choisissez votre ville:</label>
+            <label for="nick" class="text-light">Veuillez saisir votre pseudo:</label>
+            <input type="text" id="nick" class="w-50 m-1" placeholder="Pseudo">
+            <label for="date" class="text-light">Veuillez saisir votre date de naissance:</label>
+            <input type="date" id="date" class="w-50 m-1" placeholder="Date de naissance">
+            <label for="pass" class="text-light">Veuillez saisir votre password:</label>
+            <input type="password" id="pass" class="w-50 m-1" placeholder="Password">
+            <label for="email" class="text-light">Veuillez saisir votre e-mail:</label>
+            <input type="email" id="email" class="w-50 m-1" placeholder="E-mail">
+            <label for="pet-select" class="w-50 m-1 text-light">Choisissez votre ville:</label>
             <select name="city" class="w-50 m-1" id="city-select">
                 <option value="">--Choisissez votre ville--</option>
                 <option value="bruxelles">Bruxelles</option>
@@ -230,6 +248,8 @@
             </div>
         </div>
 
+        
+        
         <div class="carousel text-center">
             <button class="rond"></button>
             <button class="rond"></button>
