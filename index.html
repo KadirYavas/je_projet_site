@@ -23,16 +23,15 @@
                         <a class="nav-link" href="#">HOME</a>
                     </li>
                     <li class="nav-item">
-                        
                         <div class="dropdown">
-                            <a class="nav-link producthover" href="#">PRODUCT</a>
+                            <a class="nav-link dropbtn" href="#">PRODUCT</a>
                             <div class="dropdown-content">
-                              <a href="#">Woocommerce Shop Archive</a>
-                              <a href="#">Cart</a>
-                              <a href="#">Checkout</a>
-                              <a href="#">My Account</a>
+                                <a href="#">Woocommerce Shop Archive</a>
+                                <a href="#">Cart</a>
+                                <a href="#">Checkout</a>
+                                <a href="#">My Account</a>
                             </div>
-                          </div>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">BLOG</a>
@@ -56,9 +55,9 @@
         </nav>
 
     </header>
-    
 
-    
+
+
 
     <!-- Modal -->
 
@@ -73,32 +72,32 @@
                 <input type="password" id="password" class="w-50 m-1" placeholder="Password">
                 <button class="btnmodal">Se connecter</button>
             </div>
-        </div>
+    </div>
     </div>
     <div class="modalinscription">
         <div class="modal-content2">
             <span class="close2">&times;</span>
             <button class="btnmodal2">Connection</button>
             <div class="d-flex flex-column">
-            <label for="nick" class="text-light">Veuillez saisir votre pseudo:</label>
-            <input type="text" id="nick" class="w-50 m-1" placeholder="Pseudo">
-            <label for="date" class="text-light">Veuillez saisir votre date de naissance:</label>
-            <input type="date" id="date" class="w-50 m-1" placeholder="Date de naissance">
-            <label for="pass" class="text-light">Veuillez saisir votre password:</label>
-            <input type="password" id="pass" class="w-50 m-1" placeholder="Password">
-            <label for="email" class="text-light">Veuillez saisir votre e-mail:</label>
-            <input type="email" id="email" class="w-50 m-1" placeholder="E-mail">
-            <label for="pet-select" class="w-50 m-1 text-light">Choisissez votre ville:</label>
-            <select name="city" class="w-50 m-1" id="city-select">
-                <option value="">--Choisissez votre ville--</option>
-                <option value="bruxelles">Bruxelles</option>
-                <option value="istanbul">Istanbul</option>
-                <option value="miami">Miami</option>
-                <option value="londres">Londres</option>
-                <option value="marseille">Marseille</option>
-                <option value="amsterdam">Amsterdam</option>
-            </select>
-        </div>
+                <label for="nick" class="text-light">Veuillez saisir votre pseudo:</label>
+                <input type="text" id="nick" class="w-50 m-1" placeholder="Pseudo">
+                <label for="date" class="text-light">Veuillez saisir votre date de naissance:</label>
+                <input type="date" id="date" class="w-50 m-1" placeholder="Date de naissance">
+                <label for="pass" class="text-light">Veuillez saisir votre password:</label>
+                <input type="password" id="pass" class="w-50 m-1" placeholder="Password">
+                <label for="email" class="text-light">Veuillez saisir votre e-mail:</label>
+                <input type="email" id="email" class="w-50 m-1" placeholder="E-mail">
+                <label for="pet-select" class="w-50 m-1 text-light">Choisissez votre ville:</label>
+                <select name="city" class="w-50 m-1" id="city-select">
+                    <option value="">--Choisissez votre ville--</option>
+                    <option value="bruxelles">Bruxelles</option>
+                    <option value="istanbul">Istanbul</option>
+                    <option value="miami">Miami</option>
+                    <option value="londres">Londres</option>
+                    <option value="marseille">Marseille</option>
+                    <option value="amsterdam">Amsterdam</option>
+                </select>
+            </div>
             <button class="btnmodal2">S'inscrire</button>
         </div>
     </div>
@@ -113,7 +112,7 @@
                     <h1 class="font-weight-bold">emporium.</h1>
                     <p>A wonderful serenity has taken possession of my entire soul, like thse sweet mornings of spring
                         which i enjoy with my.</p>
-                    <button type="button" class="sale btn btn-danger">SALE ITEMS</button>
+                    <button type="button" class="sale btn btn-danger font-weight-bold">SALE ITEMS</button>
                 </div>
             </div>
             <div class="col-6 col-sm col-md col-lg">
@@ -144,12 +143,36 @@
         <h3 class="text-center mb-5 font-weight-bold">Recent Products</h3>
         <div class="row m-5">
             <div class="col-4">
-                <img src="./images/products_mini/product-luxry-sofa.jpg" alt="" class="w-100">
+                <div class="zoom">
+                    <img src="./images/products_mini/product-luxry-sofa.jpg" alt="" class="w-100">
+                    <div class="cache row container">
+                        <a class="col-6 text-center d-flex justify-content-between">
+                            <i class="far fa-eye"></i>
+                            <p>View Details</p>
+                        </a>
+                        <a class="col-6 text-center d-flex justify-content-between">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Add to cart</p>
+                        </a>
+                    </div>
+                </div>
                 <h4 class="text-center font-weight-bold">Luxury Sofa</h4>
                 <h5 class="text-center">$600.00</h5>
+
             </div>
             <div class="col-4">
-                <img src="./images/products_mini/product-gloves.jpg" alt="" class="w-100">
+                <div class="zoom">
+                    <img src="./images/products_mini/product-gloves.jpg" alt="" class="w-100">
+                    <div class="cache row container">
+                        <a class="col-6 text-center d-flex justify-content-between">
+                            <i class="far fa-eye"></i>
+                            <p>View Details</p>
+                        </a>
+                        <a class="col-6 text-center d-flex justify-content-between">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Add to cart</p>
+                        </a>
+                    </div></div>
                 <div class="d-flex align-items-center justify-content-around">
                     <div><span class="sales">Sale!</span></div>
                     <div>
@@ -159,14 +182,36 @@
                 </div>
             </div>
             <div class="col-4">
-                <img src="./images/products_mini/product-cups.jpg" alt="" class="w-100">
+                <div class="zoom">
+                    <img src="./images/products_mini/product-cups.jpg" alt="" class="w-100">
+                    <div class="cache row container">
+                        <a class="col-6 text-center d-flex justify-content-between">
+                            <i class="far fa-eye"></i>
+                            <p>View Details</p>
+                        </a>
+                        <a class="col-6 text-center d-flex justify-content-between">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Add to cart</p>
+                        </a>
+                    </div></div>
                 <h4 class="text-center font-weight-bold">Colorful Bowl</h4>
                 <h5 class="text-center">$18.00</h5>
             </div>
         </div>
         <div class="row m-5">
             <div class="col-4">
-                <img src="./images/products_mini/product-bag.jpg" alt="" class="w-100">
+                <div class="zoom">
+                    <img src="./images/products_mini/product-bag.jpg" alt="" class="w-100">
+                    <div class="cache row container">
+                        <a class="col-6 text-center d-flex justify-content-between">
+                            <i class="far fa-eye"></i>
+                            <p>View Details</p>
+                        </a>
+                        <a class="col-6 text-center d-flex justify-content-between">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Add to cart</p>
+                        </a>
+                    </div></div>
                 <div class="d-flex align-items-center justify-content-around">
                     <div><span class="sales">Sale!</span></div>
                     <div>
@@ -176,29 +221,84 @@
                 </div>
             </div>
             <div class="col-4">
-                <img src="./images/products_mini/product-tshitr.jpg" alt="" class="w-100">
+                <div class="zoom">
+                    <img src="./images/products_mini/product-tshitr.jpg" alt="" class="w-100">
+                    <div class="cache row container">
+                        <a class="col-6 text-center d-flex justify-content-between">
+                            <i class="far fa-eye"></i>
+                            <p>View Details</p>
+                        </a>
+                        <a class="col-6 text-center d-flex justify-content-between">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Add to cart</p>
+                        </a>
+                    </div></div>
                 <h4 class="text-center font-weight-bold">Minimal T-Shirt</h4>
                 <h5 class="text-center">$15.00</h5>
             </div>
             <div class="col-4">
-                <img src="./images/products_mini/product-plates.jpg" alt="" class="w-100">
+                <div class="zoom">
+                    <img src="./images/products_mini/product-plates.jpg" alt="" class="w-100">
+                    <div class="cache row container">
+                        <a class="col-6 text-center d-flex justify-content-between">
+                            <i class="far fa-eye"></i>
+                            <p>View Details</p>
+                        </a>
+                        <a class="col-6 text-center d-flex justify-content-between">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Add to cart</p>
+                        </a>
+                    </div></div>
                 <h4 class="text-center font-weight-bold">Plates Set</h4>
                 <h5 class="text-center">$30.00</h5>
             </div>
         </div>
         <div class="row m-5">
             <div class="col-4">
-                <img src="./images/products_mini/product-modern-sofa.jpg" alt="" class="w-100">
+                <div class="zoom">
+                    <img src="./images/products_mini/product-modern-sofa.jpg" alt="" class="w-100">
+                    <div class="cache row container">
+                        <a class="col-6 text-center d-flex justify-content-between">
+                            <i class="far fa-eye"></i>
+                            <p>View Details</p>
+                        </a>
+                        <a class="col-6 text-center d-flex justify-content-between">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Add to cart</p>
+                        </a>
+                    </div></div>
                 <h4 class="text-center font-weight-bold">Modern Sofa</h4>
                 <h5 class="text-center">$900.00</h5>
             </div>
             <div class="col-4">
-                <img src="./images/products_mini/product-bed.jpg" alt="" class="w-100">
+                <div class="zoom">
+                    <img src="./images/products_mini/product-bed.jpg" alt="" class="w-100">
+                    <div class="cache row container">
+                        <a class="col-6 text-center d-flex justify-content-between">
+                            <i class="far fa-eye"></i>
+                            <p>View Details</p>
+                        </a>
+                        <a class="col-6 text-center d-flex justify-content-between">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Add to cart</p>
+                        </a>
+                    </div></div>
                 <h4 class="text-center font-weight-bold">Bed Linen</h4>
                 <h5 class="text-center">$79.00</h5>
             </div>
             <div class="col-4">
-                <img src="./images/products_mini/product-shoes.jpg" alt="" class="w-100">
+                <div class="zoom">
+                    <img src="./images/products_mini/product-shoes.jpg" alt="" class="w-100">
+                    <div class="cache row container">
+                        <a class="col-6 text-center d-flex justify-content-between">
+                            <i class="far fa-eye"></i>
+                            <p>View Details</p>
+                        </a>
+                        <a class="col-6 text-center d-flex justify-content-between">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Add to cart</p>
+                        </a>
+                    </div></div>
                 <h4 class="text-center font-weight-bold">Minimal Shoes</h4>
                 <h5 class="text-center">$60.00</h5>
             </div>
@@ -222,12 +322,34 @@
         <h4 class="font-weight-bold">Hot Fashion Products</h4>
         <div class="row container ml-5 mr-5">
             <div class="col-3">
-                <img src="./images/products/product-tshitr-white-700x500.jpg" alt="" class="w-100">
+                <div class="fashion">
+                    <img src="./images/products/product-tshitr-white-700x500.jpg" alt="" class="w-100">
+                    <div class="cache row container">
+                        <a class="col-6 text-center d-flex justify-content-between">
+                            <i class="far fa-eye"></i>
+                            <p>View Details</p>
+                        </a>
+                        <a class="col-6 text-center d-flex justify-content-between">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Add to cart</p>
+                        </a>
+                    </div></div>
                 <h4 class="text-center font-weight-bold">White T-Shirt</h4>
                 <h5 class="text-center">$23.00</h5>
             </div>
             <div class="col-3">
-                <img src="./images/products/product-bag-2-700x500.jpg" alt="" class="w-100">
+                <div class="fashion">
+                    <img src="./images/products/product-bag-2-700x500.jpg" alt="" class="w-100">
+                    <div class="cache row container">
+                        <a class="col-6 text-center d-flex justify-content-between">
+                            <i class="far fa-eye"></i>
+                            <p>View Details</p>
+                        </a>
+                        <a class="col-6 text-center d-flex justify-content-between">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Add to cart</p>
+                        </a>
+                    </div></div>
                 <div class="d-flex align-items-center justify-content-around">
                     <div><span class="sales">Sale!</span></div>
                     <div>
@@ -237,19 +359,41 @@
                 </div>
             </div>
             <div class="col-3">
-                <img src="./images/products/product-jacket-700x500.jpg" alt="" class="w-100">
+                <div class="fashion">
+                    <img src="./images/products/product-jacket-700x500.jpg" alt="" class="w-100">
+                    <div class="cache row container">
+                        <a class="col-6 text-center d-flex justify-content-between">
+                            <i class="far fa-eye"></i>
+                            <p>View Details</p>
+                        </a>
+                        <a class="col-6 text-center d-flex justify-content-between">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Add to cart</p>
+                        </a>
+                    </div></div>
                 <h4 class="text-center font-weight-bold">Sporty Jacket</h4>
                 <h5 class="text-center">$40.00</h5>
             </div>
             <div class="col-3">
-                <img src="./images/products/product-shoes-700x500.jpg" alt="" class="w-100">
+                <div class="fashion">
+                    <img src="./images/products/product-shoes-700x500.jpg" alt="" class="w-100">
+                    <div class="cache row container">
+                        <a class="col-6 text-center d-flex justify-content-between">
+                            <i class="far fa-eye"></i>
+                            <p>View Details</p>
+                        </a>
+                        <a class="col-6 text-center d-flex justify-content-between">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Add to cart</p>
+                        </a>
+                    </div></div>
                 <h4 class="text-center font-weight-bold">Minimal Shoes</h4>
                 <h5 class="text-center">$60.00</h5>
             </div>
         </div>
 
-        
-        
+
+
         <div class="carousel text-center">
             <button class="rond"></button>
             <button class="rond"></button>
@@ -336,16 +480,81 @@
 
 
 
+    <div class="container my-3">
+        <div class="row mx-auto my-auto">
+            <div class="carousel slide w-100" id="carousel--multipleItem" data-ride="carousel">
+                <div class="carousel-inner w-100" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card d-flex flex-row">
+                                
+                                    <div><img src="./images/products/product-tshitr-white-700x500.jpg" alt="" class="w-100"></div><div>
+                                    <img src="./images/products/product-bag-2-700x500.jpg" alt="" class="w-100"></div>
+                                    <div><img src="./images/products/product-jacket-700x500.jpg" alt="" class="w-100"></div>
+                                    <div><img src="./images/products/product-shoes-700x500.jpg" alt="" class="w-100"></div>
+                            </div> <!-- /.card -->
+                        </div> <!-- /.col -->
+                    </div> <!-- /.carousel-item -->
+                    <div class="carousel-item">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card d-flex flex-row">
+                                <div><img src="./images/products/product-tshitr-white-700x500.jpg" alt="" class="w-100"></div><div>
+                                    <img src="./images/products/product-bag-2-700x500.jpg" alt="" class="w-100"></div>
+                                    <div><img src="./images/products/product-jacket-700x500.jpg" alt="" class="w-100"></div>
+                                    <div><img src="./images/products/product-shoes-700x500.jpg" alt="" class="w-100"></div>
+                            </div> <!-- /.card -->
+                        </div> <!-- /.col -->
+                    </div> <!-- /.carousel-item -->
+                    <div class="carousel-item">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card d-flex flex-row">
+                                <div><img src="./images/products/product-tshitr-white-700x500.jpg" alt="" class="w-100"></div><div>
+                                    <img src="./images/products/product-bag-2-700x500.jpg" alt="" class="w-100"></div>
+                                    <div><img src="./images/products/product-jacket-700x500.jpg" alt="" class="w-100"></div>
+                                    <div><img src="./images/products/product-shoes-700x500.jpg" alt="" class="w-100"></div>
+                            </div> <!-- /.card -->
+                        </div> <!-- /.col -->
+                    </div> <!-- /.carousel-item -->
+                    <div class="carousel-item">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card d-flex flex-row">
+                                
+                                <div><img src="./images/products/product-tshitr-white-700x500.jpg" alt="" class="w-100"></div><div>
+                                    <img src="./images/products/product-bag-2-700x500.jpg" alt="" class="w-100"></div>
+                                    <div><img src="./images/products/product-jacket-700x500.jpg" alt="" class="w-100"></div>
+                                    <div><img src="./images/products/product-shoes-700x500.jpg" alt="" class="w-100"></div>
+                                
+                            </div> <!-- /.card -->
+                        </div> <!-- /.col -->
+                    </div> <!-- /.carousel-item -->
+                </div> <!-- /.carousel-inner -->
+                <div class="container text-center mt-3">
+                    <button class="btn btn-outline-dark carosuel__control--prev">
+                        <i class="fas fa-angle-left"></i>
+                    </button>
+                    <button class="btn btn-outline-dark carosuel__control--next">
+                        <i class="fas fa-angle-right"></i>
+                    </button>
+                </div>
+            </div> <!-- /.carousel -->
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+
+
+
+
+
+
     <!-- Script -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="./public/js/main.js"></script>
 </body>
 

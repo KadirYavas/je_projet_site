@@ -1,27 +1,27 @@
 @import "../../node_modules/@fortawesome/fontawesome-free/css/all.css"
-    
-body 
+
+body
     margin: 0
     overflow-x: hidden
 
 $colorSpan: red
 $footerColor : #969696
 
-.sticky 
+.sticky
     position: fixed
     top: 0
     width: 100%
     transition: all 0.5s linear
-.empo 
+.empo
     width: 100px
 .colorSwitch
-    .btn1 
+    .btn1
         padding: 7px
         border: 1px solid black
     .btn2
         padding: 7px
         background-color: black
-    
+
 h4
     text-align: center
     padding-top: 30px
@@ -31,34 +31,65 @@ ul
         a
             color: #878787
             font-size: 10px
-            &:hover 
+            &:hover
                 color: black
 .nav
     li:first-child
         a
             color: black
-    
-    
+.navscroll
+    .nav
+        .dropdown
+            position: relative
+            display: inline-block
+            &:hover .dropdown-content
+                display: block
+            .dropdown-content
+                display: none
+                position: absolute
+                background-color: #383838
+                min-width: 180px
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+                z-index: 1
+                a
+                    color: grey
+                    padding: 10px
+                    margin: 7px
+                    text-decoration: none
+                    display: block
+                    &:hover
+                        background-color: #5c5c5c
+                        color: white
+
 .accueil
     background-color: #f3f3f3
-    h3 
+    h3
         font-size: 35px
     h1
         font-size: 60px
-    .sale 
+    .sale
         border-radius: 50px
         color: white
+        padding: 10px
+        &::after
+            content: '>'
+            opacity: 0
+            transition: 0.5s ease
         &:hover
+            transition: all 0.50s ease
+            padding-right: 30px
             background-color: black
             border: 1px solid black
-            padding: 6px 20px
+            &::after
+                margin-left: 10px
+                opacity: 1
 
 .imgtext1
     background-image: url("../../images/services/service-1.jpg")
     background-position: center
     height: 185px
 .troisimg
-    a 
+    a
         border-bottom: 1px solid white
         color: white
         &:hover
@@ -72,32 +103,91 @@ ul
     background-image: url("../../images/services/slider-3.jpg")
     background-position: center
     height: 185px
-
-.container 
-    h5 
+.container
+    h5
         color: $colorSpan
-    h4 
+    h4
         font-size: 15px
-    .sales 
+    .sales
         border: 1px solid #BD584E
         color: white
         padding: 15px 7px
         border-radius: 50%
         background-color: #BD584E
+.zoom
+    overflow: hidden
+    img
+  
+        transition: ease 1s
+    &:hover
+        img 
+            transform: scale(1.1)
+        .cache
+            opacity: 1
+            a 
+                padding-top: 15px
+                padding-left: 15px
+            p 
+                font-size: 15px
+    .cache 
+        position: absolute
+        bottom: 118px
+        opacity: 0
+        z-index: 3
+        transition: bottom 1s ease
+        a 
+            color: white
+            transition: 1s ease
+            opacity: 0.9
+        a:first-child 
+            background-color: #222222
+        a:last-child
+            background-color: #BD584E
 
-.imgproduct 
+.fashion
+    overflow: hidden
+    img
+  
+        transition: ease 1s
+    &:hover
+        img 
+            transform: scale(1.1)
+        .cache
+            opacity: 1
+            a 
+                padding-top: 15px
+                padding-left: 15px
+            p 
+                font-size: 10px
+    .cache 
+        position: absolute
+        bottom: 118px
+        opacity: 0
+        z-index: 3
+        transition: bottom 1s ease
+        a 
+            color: white
+            transition: 1s ease
+            opacity: 0.9
+        a:first-child 
+            background-color: #222222
+        a:last-child
+            background-color: #BD584E
+
+
+.imgproduct
     background-image: url("../../images/cta-bg.jpg")
     background-attachment: fixed
     width: 100%
     background-position: center
     height: 500px
-    p 
+    p
         color: white
         font-size: 20px
     button
         border-radius: 50px
 
-.rond 
+.rond
     background-color: #ffffff
     border: 1px solid grey
     color: white
@@ -105,34 +195,34 @@ ul
     text-decoration: none
     margin: 4px 2px
     border-radius: 50%
-    &:hover 
+    &:hover
         background-color: grey
-.divicon 
+.divicon
     width: 500px
     background-color: #f3f3f3
 .divicon2
     width: 500px
     background-color: #BD584e
-.footerColor 
+.footerColor
     background-color: #212121
-    p 
+    p
         color: $footerColor
-    h6 
+    h6
         color: $footerColor
         &:hover
             color: white
-    a 
+    a
         color: $footerColor
-    h4 
+    h4
         text-align: left
-.footer2Color 
+.footer2Color
     background-color: #0a0a0a
-    p 
+    p
         color: $footerColor
 .borderFooter
     border-left: 1px solid grey
     border-right: 1px solid grey
-    h6 
+    h6
         border-bottom: 1px solid grey
         padding-bottom: 15px
 .footerA
@@ -145,7 +235,6 @@ ul
         &:hover
             text-decoration: none
             color: white
-
 
 .modal
     display: none
@@ -165,7 +254,7 @@ ul
         padding: 20px
         border: 1px solid #888
         width: 40%
-        .btnmodal 
+        .btnmodal
             width: 110px
             background-color: #007580
             border-radius: 15px
@@ -208,4 +297,3 @@ ul
     float: right
     font-size: 28px
     font-weight: bold
-

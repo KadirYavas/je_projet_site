@@ -42,6 +42,33 @@ ul li a:hover {
   color: black;
 }
 
+.navscroll .nav .dropdown {
+  position: relative;
+  display: inline-block;
+}
+.navscroll .nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+.navscroll .nav .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #383838;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.navscroll .nav .dropdown .dropdown-content a {
+  color: grey;
+  padding: 10px;
+  margin: 7px;
+  text-decoration: none;
+  display: block;
+}
+.navscroll .nav .dropdown .dropdown-content a:hover {
+  background-color: #5c5c5c;
+  color: white;
+}
+
 .accueil {
   background-color: #f3f3f3;
 }
@@ -54,6 +81,22 @@ ul li a:hover {
 .accueil .sale {
   border-radius: 50px;
   color: white;
+  padding: 10px;
+}
+.accueil .sale::after {
+  content: ">";
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.accueil .sale:hover {
+  transition: all 0.5s ease;
+  padding-right: 30px;
+  background-color: black;
+  border: 1px solid black;
+}
+.accueil .sale:hover::after {
+  margin-left: 10px;
+  opacity: 1;
 }
 
 .imgtext1 {
@@ -94,6 +137,82 @@ ul li a:hover {
   color: white;
   padding: 15px 7px;
   border-radius: 50%;
+  background-color: #BD584E;
+}
+
+.zoom {
+  overflow: hidden;
+}
+.zoom img {
+  transition: ease 1s;
+}
+.zoom:hover img {
+  transform: scale(1.1);
+}
+.zoom:hover .cache {
+  opacity: 1;
+}
+.zoom:hover .cache a {
+  padding-top: 15px;
+  padding-left: 15px;
+}
+.zoom:hover .cache p {
+  font-size: 15px;
+}
+.zoom .cache {
+  position: absolute;
+  bottom: 118px;
+  opacity: 0;
+  z-index: 3;
+  transition: bottom 1s ease;
+}
+.zoom .cache a {
+  color: white;
+  transition: 1s ease;
+  opacity: 0.9;
+}
+.zoom .cache a:first-child {
+  background-color: #222222;
+}
+.zoom .cache a:last-child {
+  background-color: #BD584E;
+}
+
+.fashion {
+  overflow: hidden;
+}
+.fashion img {
+  transition: ease 1s;
+}
+.fashion:hover img {
+  transform: scale(1.1);
+}
+.fashion:hover .cache {
+  opacity: 1;
+}
+.fashion:hover .cache a {
+  padding-top: 15px;
+  padding-left: 15px;
+}
+.fashion:hover .cache p {
+  font-size: 10px;
+}
+.fashion .cache {
+  position: absolute;
+  bottom: 118px;
+  opacity: 0;
+  z-index: 3;
+  transition: bottom 1s ease;
+}
+.fashion .cache a {
+  color: white;
+  transition: 1s ease;
+  opacity: 0.9;
+}
+.fashion .cache a:first-child {
+  background-color: #222222;
+}
+.fashion .cache a:last-child {
   background-color: #BD584E;
 }
 
@@ -253,49 +372,5 @@ ul li a:hover {
   font-size: 28px;
   font-weight: bold;
 }
-
-
-.dropbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #212121;
-  min-width: 180px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: grey;
-  padding: 10px;
-  text-decoration: none;
-  display: block;
-  margin: 10px;
-}
-
-.dropdown-content a:hover {
-  color: white;
-  text-decoration: none;
-  background-color: #525252;
-  opacity: 0.25;
-}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-
-
-
 
 /*# sourceMappingURL=style.css.map */
