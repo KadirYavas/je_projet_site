@@ -122,12 +122,43 @@ btninsco.addEventListener('click', () => {
 // Carousel
 
 
-let carousel = document.querySelector('.carousel')
-let buttons = carousel.querySelector('button')
-let divCarousel = document.querySelectorAll('.container')[2]
-let colDivCarouselUn = divCarousel.querySelectorAll('.col-3')[0]
-let colDivCarouselDeux = divCarousel.querySelectorAll('.col-3')[1]
-let colDivCarouselTrois = divCarousel.querySelectorAll('.col-3')[2]
-let colDivCarouselQuatre = divCarousel.querySelectorAll('.col-3')[3]
+let carousel = document.querySelector('.carouselbtn')
+let buttons = carousel.querySelectorAll('.rond')[0]
+let buttons1 = carousel.querySelectorAll('.rond')[1]
+let buttons2 = carousel.querySelectorAll('.rond')[2]
+let buttons3 = carousel.querySelectorAll('.rond')[3]
+let divCarousel = document.querySelector('.carousel')
+let carouselPartie = divCarousel.querySelectorAll('.carouselpartie')[0]
+let carouselPartie1 = divCarousel.querySelectorAll('.carouselpartie')[1]
+let carouselPartie2 = divCarousel.querySelectorAll('.carouselpartie')[2]
+let carouselPartie3 = divCarousel.querySelectorAll('.carouselpartie')[3]
+let carouselPartie4 = divCarousel.querySelectorAll('.carouselpartie')[4]
+let carouselPartie5 = divCarousel.querySelectorAll('.carouselpartie')[5]
+let carouselPartie6 = divCarousel.querySelectorAll('.carouselpartie')[6]
+let carouselPartie7 = divCarousel.querySelectorAll('.carouselpartie')[7]
+let tmp = document.querySelector('.tmp')
 
+carouselPartie4.style.display = "none"
+carouselPartie5.style.display = "none"
+carouselPartie6.style.display = "none"
+carouselPartie7.style.display = "none"
+
+
+
+buttons.addEventListener('click', () => {
+    carouselPartie.style.display = "none"
+    carouselPartie4.style.display = "block"
+})
+buttons1.addEventListener('click', () => {
+    carouselPartie1.style.display = "none"
+    carouselPartie5.style.display = "block"
+})
+buttons2.addEventListener('click', () => {
+    carouselPartie2.style.display = "none"
+    carouselPartie6.style.display = "block"
+})
+buttons3.addEventListener('click', () =>{
+    carouselPartie3.style.display = "none"
+    carouselPartie7.style.display = "block"
+})
 
