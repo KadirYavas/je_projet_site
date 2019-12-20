@@ -8,7 +8,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  transition: all 0.5s linear;
+  transition: top 0.5s;
 }
 
 .empo {
@@ -22,6 +22,11 @@ body {
 .colorSwitch .btn2 {
   padding: 7px;
   background-color: black;
+}
+
+header {
+  transition: 0.5s;
+  top: -100px;
 }
 
 h4 {
@@ -372,5 +377,6 @@ ul li a:hover {
   font-size: 28px;
   font-weight: bold;
 }
+
 
 /*# sourceMappingURL=style.css.map */
