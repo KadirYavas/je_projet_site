@@ -138,27 +138,7 @@ let carouselPartie6 = divCarousel.querySelectorAll('.carouselpartie')[6]
 let carouselPartie7 = divCarousel.querySelectorAll('.carouselpartie')[7]
 let tmp = document.querySelector('.tmp')
 
-carouselPartie4.style.display = "none"
-carouselPartie5.style.display = "none"
-carouselPartie6.style.display = "none"
-carouselPartie7.style.display = "none"
 
 
 
-buttons.addEventListener('click', () => {
-    carouselPartie.style.display = "none"
-    carouselPartie4.style.display = "block"
-})
-buttons1.addEventListener('click', () => {
-    carouselPartie1.style.display = "none"
-    carouselPartie5.style.display = "block"
-})
-buttons2.addEventListener('click', () => {
-    carouselPartie2.style.display = "none"
-    carouselPartie6.style.display = "block"
-})
-buttons3.addEventListener('click', () =>{
-    carouselPartie3.style.display = "none"
-    carouselPartie7.style.display = "block"
-})
 
