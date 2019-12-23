@@ -13,6 +13,8 @@ body {
 
 .empo {
   width: 100px;
+  padding-top: 50px;
+  padding-bottom: 30px;
 }
 
 .colorSwitch .btn1 {
@@ -79,14 +81,21 @@ ul li a:hover {
 }
 .accueil h3 {
   font-size: 35px;
+  color: #bd584e;
 }
 .accueil h1 {
-  font-size: 60px;
+  font-size: 90px;
+  color: #161616;
+}
+.accueil p {
+  color: #909090;
 }
 .accueil .sale {
   border-radius: 50px;
   color: white;
-  padding: 10px;
+  background-color: #BD584E;
+  padding: 12px 25px;
+  font-size: 9px;
 }
 .accueil .sale::after {
   content: ">";
@@ -98,6 +107,7 @@ ul li a:hover {
   padding-right: 30px;
   background-color: black;
   border: 1px solid black;
+  color: white;
 }
 .accueil .sale:hover::after {
   margin-left: 10px;
@@ -107,6 +117,8 @@ ul li a:hover {
 .imgtext1 {
   background-image: url("../../images/services/service-1.jpg");
   background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
   height: 185px;
 }
 
@@ -122,20 +134,29 @@ ul li a:hover {
 .imgtext2 {
   background-image: url("../../images/services/service-2.jpg");
   background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
   height: 185px;
 }
 
 .imgtext3 {
   background-image: url("../../images/services/slider-3.jpg");
   background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
   height: 185px;
 }
 
+.container h3 {
+  font-size: 19px;
+}
 .container h5 {
-  color: red;
+  color: #bd584e;
+  font-weight: bold;
 }
 .container h4 {
   font-size: 15px;
+  font-weight: bold;
 }
 .container .sales {
   border: 1px solid #BD584E;
@@ -230,10 +251,21 @@ ul li a:hover {
 }
 .imgproduct p {
   color: white;
-  font-size: 20px;
+  font-size: 35px;
 }
 .imgproduct button {
   border-radius: 50px;
+}
+.imgproduct .btn {
+  color: white;
+  background-color: #bd584e;
+  font-size: 10px;
+  padding: 15px 25px;
+}
+
+.h4h4 {
+  font-size: 22px;
+  padding-top: 70px;
 }
 
 .rond {
@@ -253,10 +285,35 @@ ul li a:hover {
   width: 500px;
   background-color: #f3f3f3;
 }
+.divicon h6 {
+  font-weight: bold;
+}
+.divicon button {
+  padding: 10px 20px;
+}
+.divicon i {
+  padding-bottom: 30px;
+}
+.divicon p {
+  width: 18vw;
+}
 
 .divicon2 {
   width: 500px;
   background-color: #BD584e;
+}
+.divicon2 h6 {
+  font-weight: bold;
+}
+.divicon2 button {
+  padding: 10px 20px;
+}
+.divicon2 i {
+  padding-bottom: 30px;
+}
+.divicon2 p {
+  width: 18vw;
+  padding-bottom: 13px;
 }
 
 .footerColor {
@@ -264,9 +321,11 @@ ul li a:hover {
 }
 .footerColor p {
   color: #969696;
+  font-size: 13px;
 }
 .footerColor h6 {
   color: #969696;
+  font-size: 13px;
 }
 .footerColor h6:hover {
   color: white;
@@ -283,6 +342,7 @@ ul li a:hover {
 }
 .footer2Color p {
   color: #969696;
+  font-size: 13px;
 }
 
 .borderFooter {

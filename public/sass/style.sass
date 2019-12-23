@@ -4,7 +4,7 @@ body
     margin: 0
     overflow-x: hidden
 
-$colorSpan: red
+$colorSpan: #bd584e
 $footerColor : #969696
 
 .sticky
@@ -14,6 +14,8 @@ $footerColor : #969696
     transition: top 0.5s
 .empo
     width: 100px
+    padding-top: 50px
+    padding-bottom: 30px
 .colorSwitch
     .btn1
         padding: 7px
@@ -66,14 +68,21 @@ ul
 
 .accueil
     background-color: #f3f3f3
+
     h3
         font-size: 35px
+        color: #bd584e
     h1
-        font-size: 60px
+        font-size: 90px
+        color: #161616
+    p 
+        color: #909090
     .sale
         border-radius: 50px
         color: white
-        padding: 10px
+        background-color: #BD584E
+        padding: 12px 25px
+        font-size: 9px
         &::after
             content: '>'
             opacity: 0
@@ -83,6 +92,7 @@ ul
             padding-right: 30px
             background-color: black
             border: 1px solid black
+            color: white
             &::after
                 margin-left: 10px
                 opacity: 1
@@ -90,7 +100,10 @@ ul
 .imgtext1
     background-image: url("../../images/services/service-1.jpg")
     background-position: center
+    background-size: contain
+    background-repeat: no-repeat
     height: 185px
+    
 .troisimg
     a
         border-bottom: 1px solid white
@@ -101,16 +114,24 @@ ul
 .imgtext2
     background-image: url("../../images/services/service-2.jpg")
     background-position: center
+    background-size: contain
+    background-repeat: no-repeat
     height: 185px
 .imgtext3
     background-image: url("../../images/services/slider-3.jpg")
     background-position: center
+    background-size: contain
+    background-repeat: no-repeat
     height: 185px
 .container
+    h3 
+        font-size: 19px
     h5
         color: $colorSpan
+        font-weight: bold
     h4
         font-size: 15px
+        font-weight: bold
     .sales
         border: 1px solid #BD584E
         color: white
@@ -186,9 +207,19 @@ ul
     height: 500px
     p
         color: white
-        font-size: 20px
+        font-size: 35px
     button
         border-radius: 50px
+    .btn 
+        color: white
+        background-color: #bd584e
+        font-size: 10px
+        padding: 15px 25px
+.h4h4
+    font-size: 22px
+    padding-top: 70px
+
+
 
 .rond
     background-color: #ffffff
@@ -203,15 +234,34 @@ ul
 .divicon
     width: 500px
     background-color: #f3f3f3
+    h6 
+        font-weight: bold
+    button 
+        padding: 10px 20px
+    i 
+        padding-bottom: 30px 
+    p 
+        width: 18vw
 .divicon2
     width: 500px
     background-color: #BD584e
+    h6 
+        font-weight: bold
+    button 
+        padding: 10px 20px
+    i 
+        padding-bottom: 30px 
+    p 
+        width: 18vw
+        padding-bottom: 13px
 .footerColor
     background-color: #212121
     p
         color: $footerColor
+        font-size: 13px
     h6
         color: $footerColor
+        font-size: 13px
         &:hover
             color: white
     a
@@ -222,6 +272,7 @@ ul
     background-color: #0a0a0a
     p
         color: $footerColor
+        font-size: 13px
 .borderFooter
     border-left: 1px solid grey
     border-right: 1px solid grey
